@@ -1,0 +1,9 @@
+ssh on port: 4567
+
+Sam's password by bruteforcing ssh: chocolate
+
+flag1: THM{dec4389bc09669650f3479334532aeab}
+
+/home/scripts has a file clean*.sh which can run as ubuntu and gets the flag us
+
+flag2: THM{b27d33705f97ba2e1f444ec2da5f5f61}

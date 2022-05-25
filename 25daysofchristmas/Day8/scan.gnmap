@@ -1,0 +1,4 @@
+# Nmap 7.60 scan initiated Sat Apr 25 00:14:13 2020 as: nmap -A -sT -oA scan 10.10.106.115
+Host: 10.10.106.115 ()	Status: Up
+Host: 10.10.106.115 ()	Status: Up	OS: Linux 2.4.20|Linux 2.6.14 - 2.6.34|Linux 2.6.17 (Mandriva)|Linux 2.6.23|Linux 2.6.24
+# Nmap done at Sat Apr 25 00:14:48 2020 -- 1 IP address (1 host up) scanned in 35.04 seconds

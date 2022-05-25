@@ -1,0 +1,17 @@
+http://10.10.112.171/
+
+/img (Status: 301)
+/downloads (Status: 301)
+/aboutus (Status: 301)
+/admin (Status: 301)
+/css (Status: 301)
+
+Admin panel found
+
+Trying SQLmap:
+Does not seem to be injectable
+
+Adding cookie value in the login form gives access
+
+Gives us an ssh key: the cracked password is james13
+The user must be james

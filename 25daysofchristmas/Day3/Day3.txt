@@ -1,0 +1,2 @@
+* Open PCAP in wireshark
+* Use john shadow to crack the hash

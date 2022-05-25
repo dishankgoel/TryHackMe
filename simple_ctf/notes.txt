@@ -1,0 +1,11 @@
+gobuster revealed /simple which has CMS made simple running
+
+Use CVE-2019-9053 here: https://www.exploit-db.com/exploits/46635
+
+SQLI vulnerability to get the salt and passowrd and user
+
+user: mitch
+password: secret
+
+
+SSH into the machine user the credentials

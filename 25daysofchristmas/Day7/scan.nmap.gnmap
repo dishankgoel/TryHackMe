@@ -1,0 +1,4 @@
+# Nmap 7.60 scan initiated Sat Apr 25 00:04:56 2020 as: nmap -A -sT -oA scan.nmap 10.10.207.211
+Host: 10.10.207.211 ()	Status: Up
+Host: 10.10.207.211 ()	Ports: 22/open/tcp//ssh//OpenSSH 7.4 (protocol 2.0)/, 111/open/tcp//rpcbind//2-4 (RPC #100000)/, 999/open/tcp//http//SimpleHTTPServer 0.6 (Python 3.6.8)/	Ignored State: closed (997)	Seq Index: 262	IP ID Seq: All zeros
+# Nmap done at Sat Apr 25 00:06:06 2020 -- 1 IP address (1 host up) scanned in 70.22 seconds

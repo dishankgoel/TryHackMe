@@ -1,0 +1,7 @@
+Information from sql dump present on the website
+User: manager
+Password: Password123
+
+
+upload a shell from ads and get a reverse shell.
+Then there is a perl script which we can run sudo without using password and edit the script.

@@ -1,0 +1,5 @@
+Easy day1
+
+find the version of ubuntu - lsb_release -a
+
+MOTD - message of the day. Go in /etc/update-motd.d contains a list of all the messages

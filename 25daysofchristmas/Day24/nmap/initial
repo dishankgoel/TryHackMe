@@ -1,0 +1,106 @@
+# Nmap 7.60 scan initiated Thu May 14 00:01:23 2020 as: nmap -A -O -oN nmap/initial 10.10.223.189
+Nmap scan report for 10.10.223.189
+Host is up (0.18s latency).
+Not shown: 996 closed ports
+PORT     STATE SERVICE  VERSION
+22/tcp   open  ssh      OpenSSH 7.4 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 0a:ee:6d:36:10:72:ce:f0:ef:40:9e:63:52:a9:86:44 (RSA)
+|   256 11:6e:8f:7f:15:66:e3:03:b1:c4:55:f8:e7:bb:59:23 (ECDSA)
+|_  256 b3:12:7a:7f:ac:89:72:c9:25:88:96:20:ad:c7:5b:4a (EdDSA)
+111/tcp  open  rpcbind  2-4 (RPC #100000)
+| rpcinfo: 
+|   program version   port/proto  service
+|   100000  2,3,4        111/tcp  rpcbind
+|_  100000  2,3,4        111/udp  rpcbind
+8000/tcp open  http     SimpleHTTPServer 0.6 (Python 3.7.4)
+|_http-server-header: SimpleHTTP/0.6 Python/3.7.4
+|_http-title: Directory listing for /
+9200/tcp open  wap-wsp?
+| fingerprint-strings: 
+|   GetRequest: 
+|     HTTP/1.0 200 OK
+|     content-type: application/json; charset=UTF-8
+|     content-length: 493
+|     "name" : "sn6hfBl",
+|     "cluster_name" : "elasticsearch",
+|     "cluster_uuid" : "zAlVFkDaQlSBTQkLCqWJCQ",
+|     "version" : {
+|     "number" : "6.4.2",
+|     "build_flavor" : "default",
+|     "build_type" : "rpm",
+|     "build_hash" : "04711c2",
+|     "build_date" : "2018-09-26T13:34:09.098244Z",
+|     "build_snapshot" : false,
+|     "lucene_version" : "7.4.0",
+|     "minimum_wire_compatibility_version" : "5.6.0",
+|     "minimum_index_compatibility_version" : "5.0.0"
+|     "tagline" : "You Know, for Search"
+|   HTTPOptions: 
+|     HTTP/1.0 200 OK
+|     Allow: DELETE,HEAD,GET
+|     content-type: text/plain; charset=UTF-8
+|     content-length: 0
+|   Help, SSLSessionReq: 
+|     HTTP/1.0 400 Bad Request
+|     content-type: application/json; charset=UTF-8
+|     content-length: 203
+|     {"error":{"root_cause":[{"type":"illegal_argument_exception","reason":"text is empty (possibly HTTP/0.9)"}],"type":"illegal_argument_exception","reason":"text is empty (possibly HTTP/0.9)"},"status":400}
+|   RTSPRequest: 
+|     HTTP/1.1 200 OK
+|     Allow: DELETE,HEAD,GET
+|     content-type: text/plain; charset=UTF-8
+|_    content-length: 0
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port9200-TCP:V=7.60%I=7%D=5/14%Time=5EBC3D0C%P=x86_64-pc-linux-gnu%r(Ge
+SF:tRequest,244,"HTTP/1\.0\x20200\x20OK\r\ncontent-type:\x20application/js
+SF:on;\x20charset=UTF-8\r\ncontent-length:\x20493\r\n\r\n{\n\x20\x20\"name
+SF:\"\x20:\x20\"sn6hfBl\",\n\x20\x20\"cluster_name\"\x20:\x20\"elasticsear
+SF:ch\",\n\x20\x20\"cluster_uuid\"\x20:\x20\"zAlVFkDaQlSBTQkLCqWJCQ\",\n\x
+SF:20\x20\"version\"\x20:\x20{\n\x20\x20\x20\x20\"number\"\x20:\x20\"6\.4\
+SF:.2\",\n\x20\x20\x20\x20\"build_flavor\"\x20:\x20\"default\",\n\x20\x20\
+SF:x20\x20\"build_type\"\x20:\x20\"rpm\",\n\x20\x20\x20\x20\"build_hash\"\
+SF:x20:\x20\"04711c2\",\n\x20\x20\x20\x20\"build_date\"\x20:\x20\"2018-09-
+SF:26T13:34:09\.098244Z\",\n\x20\x20\x20\x20\"build_snapshot\"\x20:\x20fal
+SF:se,\n\x20\x20\x20\x20\"lucene_version\"\x20:\x20\"7\.4\.0\",\n\x20\x20\
+SF:x20\x20\"minimum_wire_compatibility_version\"\x20:\x20\"5\.6\.0\",\n\x2
+SF:0\x20\x20\x20\"minimum_index_compatibility_version\"\x20:\x20\"5\.0\.0\
+SF:"\n\x20\x20},\n\x20\x20\"tagline\"\x20:\x20\"You\x20Know,\x20for\x20Sea
+SF:rch\"\n}\n")%r(HTTPOptions,67,"HTTP/1\.0\x20200\x20OK\r\nAllow:\x20DELE
+SF:TE,HEAD,GET\r\ncontent-type:\x20text/plain;\x20charset=UTF-8\r\ncontent
+SF:-length:\x200\r\n\r\n")%r(RTSPRequest,67,"HTTP/1\.1\x20200\x20OK\r\nAll
+SF:ow:\x20DELETE,HEAD,GET\r\ncontent-type:\x20text/plain;\x20charset=UTF-8
+SF:\r\ncontent-length:\x200\r\n\r\n")%r(Help,12B,"HTTP/1\.0\x20400\x20Bad\
+SF:x20Request\r\ncontent-type:\x20application/json;\x20charset=UTF-8\r\nco
+SF:ntent-length:\x20203\r\n\r\n{\"error\":{\"root_cause\":\[{\"type\":\"il
+SF:legal_argument_exception\",\"reason\":\"text\x20is\x20empty\x20\(possib
+SF:ly\x20HTTP/0\.9\)\"}\],\"type\":\"illegal_argument_exception\",\"reason
+SF:\":\"text\x20is\x20empty\x20\(possibly\x20HTTP/0\.9\)\"},\"status\":400
+SF:}")%r(SSLSessionReq,12B,"HTTP/1\.0\x20400\x20Bad\x20Request\r\ncontent-
+SF:type:\x20application/json;\x20charset=UTF-8\r\ncontent-length:\x20203\r
+SF:\n\r\n{\"error\":{\"root_cause\":\[{\"type\":\"illegal_argument_excepti
+SF:on\",\"reason\":\"text\x20is\x20empty\x20\(possibly\x20HTTP/0\.9\)\"}\]
+SF:,\"type\":\"illegal_argument_exception\",\"reason\":\"text\x20is\x20emp
+SF:ty\x20\(possibly\x20HTTP/0\.9\)\"},\"status\":400}");
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.60%E=4%D=5/14%OT=22%CT=1%CU=39880%PV=Y%DS=2%DC=T%G=Y%TM=5EBC3D8
+OS:D%P=x86_64-pc-linux-gnu)SEQ(SP=104%GCD=1%ISR=10C%TI=Z%CI=Z%II=I%TS=A)SEQ
+OS:(SP=FE%GCD=1%ISR=109%TI=Z%CI=Z%TS=A)OPS(O1=M508ST11NW7%O2=M508ST11NW7%O3
+OS:=M508NNT11NW7%O4=M508ST11NW7%O5=M508ST11NW7%O6=M508ST11)WIN(W1=68DF%W2=6
+OS:8DF%W3=68DF%W4=68DF%W5=68DF%W6=68DF)ECN(R=Y%DF=Y%T=FF%W=6903%O=M508NNSNW
+OS:7%CC=Y%Q=)T1(R=Y%DF=Y%T=FF%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF
+OS:=Y%T=FF%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF=Y%T=FF%W=0%S=Z%A=S+%F=AR%O=
+OS:%RD=0%Q=)T6(R=Y%DF=Y%T=FF%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=FF%W=
+OS:0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=FF%IPL=164%UN=0%RIPL=G%RID=G%RI
+OS:PCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=FF%CD=S)
+
+Network Distance: 2 hops
+
+TRACEROUTE (using port 587/tcp)
+HOP RTT       ADDRESS
+1   199.10 ms 10.9.0.1
+2   199.07 ms 10.10.223.189
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu May 14 00:03:49 2020 -- 1 IP address (1 host up) scanned in 146.03 seconds

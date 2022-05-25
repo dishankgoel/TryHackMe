@@ -1,0 +1,3 @@
+Get the ZIP file from PCAP. then fcrackzip it.
+Also, DNS has hex encoded string.
+

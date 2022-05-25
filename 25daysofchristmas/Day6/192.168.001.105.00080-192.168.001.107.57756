@@ -1,0 +1,18 @@
+HTTP/1.0 200 OK
+Server: SimpleHTTP/0.6 Python/2.7.17
+Date: Wed, 04 Dec 2019 00:36:13 GMT
+Content-type: text/html; charset=UTF-8
+Content-Length: 280
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN"><html>
+<title>Directory listing for /</title>
+<body>
+<h2>Directory listing for /</h2>
+<hr>
+<ul>
+<li><a href="christmaslists.zip">christmaslists.zip</a>
+<li><a href="TryHackMe.jpg">TryHackMe.jpg</a>
+</ul>
+<hr>
+</body>
+</html>

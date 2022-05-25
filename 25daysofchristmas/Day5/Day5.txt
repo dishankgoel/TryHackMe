@@ -1,0 +1,2 @@
+Google the creator name from the image meta data.
+Go through the twitter profile

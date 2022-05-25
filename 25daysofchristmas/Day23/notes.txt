@@ -1,0 +1,9 @@
+Use SQL map to dump the database
+Santa Clase creds:
+Email: bigman@shefesh.com
+password: saltnpepper
+
+Then there is a upload file utility. Let's inject a php script in there
+Use the extension .phtml since .php is blacklisted
+
+flag: THM{SHELLS_IN_MY_EGGNOG}

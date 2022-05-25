@@ -1,0 +1,8 @@
+Enumeration:
+* http- 8000
+* wap-wsp?- 9200 elasticsearch api	
+* kibana - 5601 (hidden!)
+
+found creds in database:
+username: l33tperson
+password: 9Qs58Ol3AXkMWLxiEyUyyf
